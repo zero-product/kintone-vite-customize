@@ -35,9 +35,18 @@ yarn install
     {
         "app": "<該当のアプリID>",
         "scope": "<適用範囲 (ALL|ADMIN|NONE)>",
-          // :
-          // 略
-          // :
+        "desktop": {
+            "js": [
+                "./dist/app.js"
+            ],
+            "css": [
+                "./dist/style.css"
+            ]
+        },
+        "mobile": {
+            "js": [],
+            "css": []
+        }
     }
     ```
 
