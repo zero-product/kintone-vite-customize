@@ -57,7 +57,7 @@ yarn install
 |`yarn dev`|`./src`ディレクトリ内のファイルを変更するとkintoneに反映されます。|
 |`yarn deploy`|kintoneにカスタマイズを反映します。|
 
-## Vue.js
+## Vue.js(Option)
 
 1. Vue3、Viteインストール
 
@@ -96,7 +96,7 @@ yarn install
 1. `./src`ディレクトリに`App.vue`を作成
 
     ```javascript
-    // ./src/App.vue
+    //// ./src/App.vue
     <script setup>
     </script>
 
