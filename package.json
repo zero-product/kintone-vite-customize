@@ -1,0 +1,24 @@
+{
+  "name": "vite-kintone-customize",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "set NODE_ENV=development && run-p *:watch",
+    "build": "set NODE_ENV=production && vite build",
+    "upload": "node ./uploader",
+    "build:watch": "vite build --watch",
+    "upload:watch": "node ./uploader --watch",
+    "deploy": "yarn build && yarn upload"
+  },
+  "dependencies": {
+    "@kintone/rest-api-client": "^3.3.2",
+    "dayjs": "^1.11.7",
+    "kintone-ui-component": "^1.9.0",
+    "sweetalert2": "^11.7.2"
+  },
+  "devDependencies": {
+    "@kintone/customize-uploader": "^6.0.26",
+    "npm-run-all": "^4.1.5",
+    "vite": "^4.1.0"
+  }
+}
